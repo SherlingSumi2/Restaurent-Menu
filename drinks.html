@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheri Restaurent</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/x-icon" href="icon.jpg">
+</head>
+<style>
+h1,h3{
+        color: white;
+    }
+.navbar .nav-link.active {
+     position: relative;
+     color:white;
+    }
+.navbar .nav-link.active::before {
+     content: "";
+     position: absolute;
+     left: 10px;
+     right: 10px;
+     bottom: 0;
+     height: 2px;
+     background-color: white;
+    }
+body{
+    background-image:url(bg1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar a{
+    color: white;
+    font-size: 25px;
+}
+
+.white-table,
+.white-table thead,
+.white-table tbody,
+.white-table tr,
+.white-table td,
+.white-table th {
+    background-color: transparent !important; 
+    color: white !important;                 
+    border-color: rgba(255, 255, 255, 0.3) !important; 
+}
+.navbar-toggler {
+    border-color: white; /* Border white */
+}
+
+.navbar-toggler-icon {
+    background-image: none !important; /* remove bootstrap default icon */
+    width: 1.5em;
+    height: 1.5em;
+    display: inline-block;
+    position: relative;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after,
+.navbar-toggler-icon div {
+    content: "";
+    background-color: white;
+    display: block;
+    height: 2px;
+    border-radius: 1px;
+    margin: 5px 0;
+}
+.navbar a:hover{
+  color: white;
+}
+
+h1 {
+  font-size: 1.5rem; /* smaller on mobile */
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.5rem; /* bigger on desktop */
+  }
+}
+
+/* On desktop, center the title */
+@media (min-width: 992px) {
+  .navbar h1 {
+    text-align: center;
+    width: 100%;
+  }
+  .navbar-toggler {
+    display: none; /* hide toggle button in desktop */
+  }
+}
+
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid flex-column">
+
+    <!-- Title + Toggler in one row (mobile only) -->
+    <div class="d-flex justify-content-between align-items-center w-100">
+      <h1 class="fw-bold m-0 text-white p-3 p-md-5">RESTAURENT MENU</h1>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><div></div></span>
+      </button>
+    </div>
+
+    <!-- Nav links -->
+    <div class="collapse navbar-collapse justify-content-center p-2" id="navbarSupportedContent">
+      <ul class="navbar-nav fw-bold">
+        <li class="nav-item"><a class="nav-link " href="index.html">Starters</a></li>
+        <li class="nav-item"><a class="nav-link" href="maincourse.html">Main Course</a></li>
+        <li class="nav-item"><a class="nav-link" href="sides.html">Sides</a></li>
+        <li class="nav-item"><a class="nav-link active" href="drinks.html">Drinks</a></li>
+        <li class="nav-item"><a class="nav-link" href="dessrets.html">Desserts</a></li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+
+<div class="container-fluid p-4 p-md-5">
+    <div class="row">
+        <div class=" col-12 col-md-6">
+          <table class="table white-table">
+            <thead class="fw-bold">
+              <td><h3>Fresh Juices 🍹</h3></td>
+            </thead>
+            <tr>
+              <td>Watermelon Juice</td>
+              <td>₹80</td>
+            </tr>
+            <tr>
+              <td>Pineapple Juice</td>
+              <td>₹90</td>
+            </tr>
+            <tr>
+              <td>Orange Juice</td>
+              <td>₹100</td>
+            </tr>
+            <tr>
+               <td>Mango Juice (Seasonal)</td>
+               <td>₹100</td>
+            </tr>
+            <tr>
+              <td>Mixed Fruit Juice</td>
+              <td>₹110</td>
+            </tr>
+          </table>
+        </div>
+
+    
+        <div class="col-12 col-md-6">
+          <table class="table white-table">
+            <thead class="fw-bold">
+              <td><h3>Soft Drinks & Cool Beverages 🥤</h3></td>
+            </thead>
+            <tr>
+              <td>Fresh Lime Soda (Sweet/Salt)</td>
+              <td>₹60</td>
+            </tr>
+            <tr>
+              <td>Cola / Sprite / Fanta (300ml)</td>
+              <td>₹40</td>
+            </tr>
+            <tr>
+              <td>Iced Tea (Lemon / Peach)</td>
+              <td>₹90</td>
+            </tr>
+            <tr>
+               <td>Cold Coffee</td>
+               <td>₹100</td>
+            </tr>
+            <tr>
+              <td>Milkshake (Vanilla/Chocolate/Strawberry)</td>
+              <td>₹120</td>
+            </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid p-4 p-md-5">
+    <div class="row">
+        <div class=" col-12 col-md-6">
+          <table class="table white-table">
+            <thead class="fw-bold">
+              <td><h3>Mocktails (Non-Alcoholic) 🍸</h3></td>
+            </thead>
+            <tr>
+              <td>Virgin Mojito</td>
+              <td>₹120</td>
+            </tr>
+            <tr>
+              <td>Blue Lagoon</td>
+              <td>₹140</td>
+            </tr>
+            <tr>
+              <td>Fruit Punch</td>
+              <td>₹130</td>
+            </tr>
+            <tr>
+               <td>Strawberry Delight</td>
+               <td>₹140</td>
+            </tr>
+            <tr>
+              <td>Green Apple Cooler</td>
+              <td>₹130</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <table class="table white-table">
+            <thead class="fw-bold">
+              <td><h3>Hot Beverages ☕</h3></td>
+            </thead>
+            <tr>
+              <td>Masala Chai</td>
+              <td>₹40</td>
+            </tr>
+            <tr>
+              <td>Filter Coffee (South Indian)</td>
+              <td>₹50</td>
+            </tr>
+            <tr>
+               <td>Cappuccino</td>
+               <td>₹90</td>
+            </tr>
+            <tr>
+              <td>Hot Chocolate</td>
+              <td>₹100</td>
+            </tr>
+            <tr>
+                <td>Herbal Tea (Lemon / Mint)</td>
+                <td>70</td>
+            </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<div>
+    <h3 class="text-center p-3 mb-5">📍 Thank you for dining with us...!</h3>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

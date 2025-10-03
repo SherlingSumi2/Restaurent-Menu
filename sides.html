@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheri Restaurent</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/x-icon" href="icon.jpg">
+</head>
+<style>
+h1,h3{
+        color: white;
+    }
+.navbar .nav-link.active {
+     position: relative;
+     color:white;
+    }
+.navbar .nav-link.active::before {
+     content: "";
+     position: absolute;
+     left: 10px;
+     right: 10px;
+     bottom: 0;
+     height: 2px;
+     background-color: white;
+    }
+body{
+    background-image:url(bg1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar a{
+    color: white;
+    font-size: 25px;
+}
+
+.white-table,
+.white-table thead,
+.white-table tbody,
+.white-table tr,
+.white-table td,
+.white-table th {
+    background-color: transparent !important; 
+    color: white !important;                 
+    border-color: rgba(255, 255, 255, 0.3) !important; 
+}
+.navbar-toggler {
+    border-color: white; /* Border white */
+}
+
+.navbar-toggler-icon {
+    background-image: none !important; /* remove bootstrap default icon */
+    width: 1.5em;
+    height: 1.5em;
+    display: inline-block;
+    position: relative;
+}
+.navbar a:hover{
+  color: white;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after,
+.navbar-toggler-icon div {
+    content: "";
+    background-color: white;
+    display: block;
+    height: 2px;
+    border-radius: 1px;
+    margin: 5px 0;
+}
+
+h1 {
+  font-size: 1.5rem; /* smaller on mobile */
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.5rem; /* bigger on desktop */
+  }
+}
+
+/* On desktop, center the title */
+@media (min-width: 992px) {
+  .navbar h1 {
+    text-align: center;
+    width: 100%;
+  }
+  .navbar-toggler {
+    display: none; /* hide toggle button in desktop */
+  }
+}
+
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid flex-column">
+
+    <!-- Title + Toggler in one row (mobile only) -->
+    <div class="d-flex justify-content-between align-items-center w-100">
+      <h1 class="fw-bold m-0 text-white p-3 p-md-5">RESTAURENT MENU</h1>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><div></div></span>
+      </button>
+    </div>
+
+    <!-- Nav links -->
+    <div class="collapse navbar-collapse justify-content-center p-2" id="navbarSupportedContent">
+      <ul class="navbar-nav fw-bold">
+        <li class="nav-item"><a class="nav-link" href="index.html">Starters</a></li>
+        <li class="nav-item"><a class="nav-link" href="maincourse.html">Main Course</a></li>
+        <li class="nav-item"><a class="nav-link active" href="sides.html">Sides</a></li>
+        <li class="nav-item"><a class="nav-link" href="drinks.html">Drinks</a></li>
+        <li class="nav-item"><a class="nav-link" href="dessrets.html">Desserts</a></li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+
+<div class="container-fluid p-4 p-md-5">
+    <div class="row">
+        <div class=" col-12 col-md-6">
+          <table class="table white-table">
+            <thead class="fw-bold">
+              <td><h3>Tandoori & Grilled Specials 🍗</h3></td>
+            </thead>
+            <tr>
+              <td>Tandoori Chicken (Full)</td>
+              <td>₹420</td>
+            </tr>
+            <tr>
+              <td>Tandoori Chicken (Half)</td>
+              <td>₹240</td>
+            </tr>
+            <tr>
+              <td>Chicken Tikka (6 pcs)</td>
+              <td>₹260</td>
+            </tr>
+            <tr>
+               <td>Malai Chicken Tikka</td>
+               <td>₹270</td>
+            </tr>
+            <tr>
+              <td>Grilled Chicken (Full)</td>
+              <td>₹380</td>
+            </tr>
+          </table>
+        </div>
+
+    
+        <div class="col-12 col-md-6">
+          <table class="table white-table">
+            <thead class="fw-bold">
+              <td><h3>Broasted / Fried Chicken 🍖</h3></td>
+            </thead>
+            <tr>
+              <td>Broasted Chicken (4 pcs)</td>
+              <td>₹280</td>
+            </tr>
+            <tr>
+              <td>Broasted Chicken (8 pcs)</td>
+              <td>₹520</td>
+            </tr>
+            <tr>
+              <td>Crispy Fried Chicken Bucket (6 pcs)</td>
+              <td>₹380</td>
+            </tr>
+            <tr>
+               <td>Spicy Fried Chicken Strips</td>
+               <td>₹220</td>
+            </tr>
+            <tr>
+              <td>Popcorn Chicken</td>
+              <td>₹180</td>
+            </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid p-4 p-md-5">
+    <div class="row">
+        <div class=" col-12 col-md-6">
+          <table class="table white-table">
+            <thead class="fw-bold">
+              <td><h3>Arabian & Alfaham Style 🔥</h3></td>
+            </thead>
+            <tr>
+              <td>Alfaham Chicken (Half)</td>
+              <td>₹280</td>
+            </tr>
+            <tr>
+              <td>Alfaham Chicken (Full)</td>
+              <td>₹480</td>
+            </tr>
+            <tr>
+              <td>Shawarma Plate</td>
+              <td>₹180</td>
+            </tr>
+            <tr>
+               <td>Grilled Peri Peri Chicken (Half)</td>
+               <td>₹320</td>
+            </tr>
+            <tr>
+              <td>BBQ Chicken (Half)</td>
+              <td>₹300</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <table class="table white-table">
+            <thead class="fw-bold">
+              <td><h3>Dragon-Chinese Specials🌶️</h3></td>
+            </thead>
+            <tr>
+              <td>Dragon Chicken</td>
+              <td>₹260</td>
+            </tr>
+            <tr>
+              <td>Chilli Chicken Dry</td>
+              <td>₹220</td>
+            </tr>
+            <tr>
+               <td>Pepper Chicken</td>
+               <td>₹230</td>
+            </tr>
+            <tr>
+              <td>Chicken Manchurian Dry</td>
+              <td>₹220</td>
+            </tr>
+            <tr>
+                <td>Hot Garlic Chicken</td>
+                <td>240</td>
+            </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div>
+    <h3 class="text-center p-3 mb-5">📍 Thank you for dining with us...!</h3>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
